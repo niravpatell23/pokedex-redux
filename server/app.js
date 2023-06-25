@@ -9,7 +9,7 @@ const client = redis.createClient();
 
 const cors = require("cors");
 
-const whitelist = ["http://localhost:3000"];
+const whitelist = ["https://pokedex-redux-8mg2.vercel.app/"];
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -72,7 +72,7 @@ app.use("*", (req, res) => {
   res.status(404).json({ error: "page not found" });
 });
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
   console.log("The server is up and running !!!");
