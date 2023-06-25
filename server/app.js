@@ -1,9 +1,7 @@
 const express = require("express");
 
-const redis = require("redis");
 const axios = require("axios");
 const app = express();
-const client = redis.createClient();
 
 // client.connect()
 
