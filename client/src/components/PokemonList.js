@@ -74,7 +74,7 @@ function PokemonList(props) {
       try {
         console.log(1);
         const data = await axios.get(
-          "http://localhost:4000/pokemon/page/" + pagenum
+          "https://pokedex-redux-seven.vercel.app/pokemon/page/" + pagenum
         );
         console.log("data" + data);
 
