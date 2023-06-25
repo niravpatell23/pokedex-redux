@@ -9,7 +9,7 @@ const client = redis.createClient();
 
 const cors = require("cors");
 
-const whitelist = ["https://pokedex-redux-8mg2.vercel.app/"];
+const whitelist = ["http://localhost:3000"];
 
 const corsOptions = {
   origin: function (origin, callback) {
